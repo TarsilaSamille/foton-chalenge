@@ -42,7 +42,7 @@ export default function Index() {
 const styles = StyleSheet.create({
   all: {
     background: "#FBF6F1",
-    overflow: "auto",
+    overflow: "hidden",
   },
   loading: {
     font: "1em/1.2 Helvetica, Arial, serif",

@@ -45,3 +45,10 @@ In this screen the functionalities below are **mandatory**:
 
 1. See all information for the selected book.
    {"mode":"full","isActive":false}
+
+### Run
+
+```
+> npm i
+> npm run dev
+```

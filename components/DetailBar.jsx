@@ -68,6 +68,7 @@ const styles = StyleSheet.create({
     overflow: "visible",
     flexGrow: 1,
     margin: "19px 20px 19px 22px",
+    justifyContent: "center",
   },
   flex1: { display: "flex" },
   flex1_lyt: {
