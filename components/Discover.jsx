@@ -35,6 +35,7 @@ export default function Discover(props) {
             {books.length !== booksA.length && (
               <div onClick={left} className={css(styles.group5)} />
             )}
+
             <img src="/assets/linhas.svg" className={css(styles.lines)} />
             {booksA.map((book, idx) => (
               <div
@@ -58,7 +59,7 @@ Discover.inStorybook = true;
 const styles = StyleSheet.create({
   lines: {
     position: "absolute",
-    margin: "-32px 72vw",
+    margin: "-32px 77vw",
     zIndex: "1",
   },
   container: {

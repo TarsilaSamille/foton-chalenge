@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 
 import useSwr from "swr";
-import Link from "next/link";
-import Home from "../components/Home";
 import Layout from "../components/layout";
 import { StyleSheet, css } from "aphrodite/no-important";
 import Bar from "../components/Bar";
@@ -44,6 +42,7 @@ export default function Index() {
 const styles = StyleSheet.create({
   all: {
     background: "#FBF6F1",
+    overflow: "auto",
   },
   loading: {
     font: "1em/1.2 Helvetica, Arial, serif",
@@ -64,7 +63,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     overflow: "visible",
     height: 59,
-    bottom: 4,
+    bottom: 0,
     left: 0,
     right: 0,
     display: "flex",

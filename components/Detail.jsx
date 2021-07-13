@@ -80,6 +80,9 @@ const styles = StyleSheet.create({
     position: "fixed",
     bottom: "5%",
     width: "85%",
+    margin: "0 auto",
+    left: 0,
+    right: 0,
   },
   boll: {
     position: "absolute",
@@ -138,6 +141,9 @@ const styles = StyleSheet.create({
     display: "flex",
     background: "var(--src) center center / contain no-repeat",
     backgroundColor: "rgb(255,240,0)",
+    margin: "0 auto",
+    left: 0,
+    right: 0,
   },
   group1_lyt: {
     position: "relative",
@@ -145,7 +151,6 @@ const styles = StyleSheet.create({
     minHeight: 229,
     width: 153,
     minWidth: 153,
-    margin: "10px 0px 0px 91px",
   },
   flex1: { display: "flex", flexDirection: "column" },
   flex1_lyt: {

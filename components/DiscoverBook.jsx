@@ -6,22 +6,21 @@ import { StyleSheet, css } from "aphrodite/no-important";
 
 export default function DiscoverBook(props) {
   const { book, idx } = props;
+  const main = idx === 0;
   return (
     <div className={css(styles.flex2, styles.flex2_lyt)}>
       <div className={css(styles.group, styles.group_lyt)} />
       <div className={css(styles.group, styles.group_lyt2)}>
         <div
           className={
-            idx === 0
+            main
               ? css(styles.group5, styles.group5_lyt)
               : css(styles.group5_side, styles.group5_side_lyt)
           }
         >
           <div
             className={
-              idx === 0
-                ? css(styles.flex3, styles.flex3_lyt)
-                : css(styles.flex3)
+              main ? css(styles.flex3, styles.flex3_lyt) : css(styles.flex3)
             }
           >
             <div className={css(styles.flex3_spacer)} />
@@ -32,7 +31,6 @@ export default function DiscoverBook(props) {
               <div className={css(styles.author, styles.author_lyt)}>
                 {book.volumeInfo.authors}
               </div>
-
               <div className={css(styles.flex5, styles.flex5_lyt)}>
                 <img
                   src="/assets/data.svg"
@@ -50,12 +48,14 @@ export default function DiscoverBook(props) {
                     <span className={css(styles.small_text_body_span0)}>
                       {"120+"}
                     </span>
-                    <span className={css(styles.small_text_body_span1)}>
-                      {" Read Now"}
-                    </span>
+                    <a href={main ? "/detalhes/" + book.id : ""}>
+                      <span className={css(styles.small_text_body_span1)}>
+                        {" Read Now"}
+                      </span>
+                    </a>
                   </div>
                 </div>
-              </div>
+              </div>{" "}
             </div>
             <div className={css(styles.group, styles.group_lyt1)}>
               <img

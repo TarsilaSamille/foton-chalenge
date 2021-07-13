@@ -107,7 +107,6 @@ const styles = StyleSheet.create({
     font: '24px/1.2 "Roboto", Helvetica, Arial, serif',
     color: "rgb(0,0,0)",
     letterSpacing: "0",
-    whiteSpace: "pre-wrap",
   },
   subtitle_box: {},
   subtitle_box_lyt: {

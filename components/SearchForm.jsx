@@ -102,14 +102,16 @@ const styles = StyleSheet.create({
     display: "inline-flex",
     backgroundColor: "rgb(254,253,253)",
     borderRadius: "10px 10px 10px 10px",
-    marginLeft: "20px",
+    margin: "0 auto",
+    left: 20,
+    right: 20,
   },
   content_box_lyt: {
     position: "relative",
     overflow: "visible",
     minHeight: 48,
     flexGrow: 1,
-    minWidth: "87vw",
+    width: "90vw",
   },
   content_box_spacer: { display: "flex", flex: "0 0 auto", minWidth: 19 },
   cover_group: {
